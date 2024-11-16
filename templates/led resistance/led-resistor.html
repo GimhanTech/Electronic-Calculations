@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Resistor Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LED Resistor Calculator</h1>
+        <p>Calculate the required resistor value for your LED circuit.</p>
+    </header>
+    <main>
+        <div class="calculator-container">
+            <div class="input-section">
+                <h2>Input Values</h2>
+                <label for="supplyVoltage">Supply Voltage (V):</label>
+                <input type="number" id="supplyVoltage" placeholder="Enter supply voltage">
+
+                <label for="ledVoltage">LED Forward Voltage (V):</label>
+                <input type="number" id="ledVoltage" placeholder="Enter LED forward voltage">
+
+                <label for="ledCurrent">LED Current (mA):</label>
+                <input type="number" id="ledCurrent" placeholder="Enter LED current">
+            </div>
+            <div class="output-section">
+                <h2>Results</h2>
+                <p id="result-message">Resistor Value = (Supply Voltage - LED Voltage) / LED Current</p>
+            </div>
+        </div>
+    </main>
+    <script src="led-resistor.js"></script>
+</body>
+</html>

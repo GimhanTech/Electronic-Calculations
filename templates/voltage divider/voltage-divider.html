@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltage Divider Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Voltage Divider Calculator</h1>
+        <p>Calculate the output voltage of a voltage divider circuit.</p>
+    </header>
+    <main>
+        <div class="calculator-container">
+            <div class="input-section">
+                <h2>Input Values</h2>
+                <label for="inputVoltage">Input Voltage (V):</label>
+                <input type="number" id="inputVoltage" placeholder="Enter input voltage">
+
+                <label for="resistor1">Resistance R1 (Ω):</label>
+                <input type="number" id="resistor1" placeholder="Enter resistance R1">
+
+                <label for="resistor2">Resistance R2 (Ω):</label>
+                <input type="number" id="resistor2" placeholder="Enter resistance R2">
+            </div>
+            <div class="output-section">
+                <h2>Results</h2>
+                <p id="result-message">Output Voltage = (R2 / (R1 + R2)) × Input Voltage</p>
+            </div>
+        </div>
+    </main>
+    <script src="voltage-divider.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regulator Power Dissipation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Linear Regulator Power Dissipation</h1>
+        <p>Calculate the power dissipation of a linear voltage regulator.</p>
+    </header>
+    <main>
+        <div class="calculator-container">
+            <div class="input-section">
+                <h2>Input Values</h2>
+                <label for="inputVoltage">Input Voltage (V):</label>
+                <input type="number" id="inputVoltage" placeholder="Enter input voltage">
+
+                <label for="outputVoltage">Output Voltage (V):</label>
+                <input type="number" id="outputVoltage" placeholder="Enter output voltage">
+
+                <label for="current">Load Current (A):</label>
+                <input type="number" id="current" placeholder="Enter load current">
+            </div>
+            <div class="output-section">
+                <h2>Results</h2>
+                <p id="result-message">Power Dissipation = (Input Voltage - Output Voltage) × Load Current</p>
+            </div>
+        </div>
+    </main>
+    <script src="linear-regulator.js"></script>
+</body>
+</html>
